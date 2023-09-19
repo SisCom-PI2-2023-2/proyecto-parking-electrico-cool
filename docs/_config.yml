@@ -24,8 +24,8 @@ title: Proyecto Impresionante!
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Trabajo realizado en el marco de la asignatura Proyecto Integrador 2, Universidad ORT Uruguay.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://siscom-pi2-2023-2.github.io/proyecto-parking-electrico-cool" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/proyecto-parking-electrico-cool" # the subpath of your site, e.g. /blog
+url: "https://siscom-pi2-2023-2.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
