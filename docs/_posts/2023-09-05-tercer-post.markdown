@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Tercer post!"
-date:   2023-09-05 14:14:20 -0300
+date:   2023-09-28 22:18:20 -0300
 categories: posts
 ---
 Los posts se guardan en el directorio `_posts`. Agregando posts aquí (y editando este también) respetando el formato pueden hacer la bitácora del proyecto.
