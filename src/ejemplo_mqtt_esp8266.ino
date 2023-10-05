@@ -3,6 +3,8 @@
  Based on MQTT ESP8266 example
  Andres Ferragut
  ferragut@fi365.ort.edu.uy
+
+ Se clona proyecto
 */
 
 #include <ESP8266WiFi.h>
