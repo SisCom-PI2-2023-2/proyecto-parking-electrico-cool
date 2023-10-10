@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Día 3"
+date:   2023-08-22 19:30:00 -0300
+categories: posts
+---
+Presentación de las principales herramientas a utilizar en el proyecto: GitHub y Thingsboard. Explicación a gran nivel para entender el funcionamiento de IoT.
