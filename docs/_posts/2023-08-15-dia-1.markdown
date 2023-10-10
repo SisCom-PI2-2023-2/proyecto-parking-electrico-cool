@@ -4,5 +4,5 @@ title:  "Día 1"
 date:   2023-08-15 19:30:00 -0300
 categories: posts
 ---
-Explicación de Metodologías Ágiles (Scrum) para aplicarlo en la ejecución del proyecto.
+Presentación del curso y obligatorio. Lluvia de ideas para el proyecto con el equipo. Idea principal: sistema de reserva para parking. Para hacerlo más novedoso manejamos la idea de hacer un sistema de reserva para estacionamiento con enchufes para cargar autos eléctricos.
 
