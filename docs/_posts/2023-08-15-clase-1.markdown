@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Clase 1"
+date:   2023-08-15 22:30:00 -0300
+categories: posts
+---
+Presentación del curso y Obligatorio. Lluvia de ideas para el proyecto con el equipo. Idea principal: sistema de reserva para parking. Para hacerlo más novedoso manejamos la idea de hacer un sistema de reserva para estacionamiento con enchufes para cargar autos eléctricos.
+
+
