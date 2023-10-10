@@ -54,6 +54,4 @@ Creando archivos `.markdown` en la carpeta principal pueden agregar "tabs" de na
 
 El archivo `_config.yml` contiene la configuración básica del sitio. Edítenlo para ajustarlo a su proyecto.
 
-## Posts
-
-En la carpeta `_posts`` pueden poner posts para crear la bitácora del proyecto. En el primer post está cómo debe ser el formato para que les quede ordenado.
+## Bitácora
