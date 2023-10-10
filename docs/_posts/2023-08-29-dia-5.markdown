@@ -10,7 +10,7 @@ Se trabaja en el Anteproyecto (Elección de nombre del proyecto, Objetivo, Descr
 Nombre del Proyecto: Volt Park
 
 Diseño preliminar en 3D: 
-![Diseño3D](assets/Diseño_3D.JPG)
+![Diseño3D](/assets/Diseño_3D.JPG)
 
 Pruebas para testear conexión con Thingsboard. Se detalla código utilizado a continuación:
 
