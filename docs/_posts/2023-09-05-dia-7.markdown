@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Día 7"
+date:   2023-09-05 19:30:00 -0300
+categories: posts
+---
+
+Se trabaja en el Anteproyecto (Estimación de tiempos, Diagrama de Gantt y listado de materiales).
+
+Diagrama de Gantt:
+
+![Gantt](/proyecto-volt-park/assets/Gantt.JPG)
