@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Día 8"
+date:   2023-09-07 19:30:00 -0300
+categories: posts
+---
+
+Se realiza prueba con servomotor y ESP8266, comprobamos que es posible barrer en 90° con los 3,3V que entrega la placa. Se realizaron pruebas en Thingsboard (conexión wi-fi, encendido y apagado de led de la placa a distancia).
