@@ -18,11 +18,13 @@ MVP:
 - Al ingresar un auto al estacionamiento se le indicará el espacio libre al que debe dirigirse, utilizando la lógica del punto anterior y con un método visual apropiado como ser una led parpadeante.
   
 Solución Estándar:
+
 	La solución estándar incorporará las siguientes funcionalidades:
 - Lector de matrícula para acceso y salida al estacionamiento, permitiendo prescindir el uso de la tarjeta o llave electrónica en caso de que así se desee.
 - Dashboard o panel de métricas (tiempo de cada auto utilizando el cargador, cantidad de autos que accedieron en x tiempo, etc.)
   
-	Solución Premium:
+Solución Premium:
+
 	La solución premium por su lado incorporará las siguientes funcionalidades o mejoras:
 - Guía de luces pulsantes que indique al usuario cómo llegar al lugar indicado para estacionar.
 - Posibilidad de registro, modificación y eliminación de usuarios en la base de datos.
