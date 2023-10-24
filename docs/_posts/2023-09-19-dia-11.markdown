@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Día 11"
+date:   2023-09-19 19:30:00 -0300
+categories: posts
+---
+
+Nos presentan repositorio para entrega final así como modelo para la web. Se continúa con pruebas de sensor infrarrojo.
