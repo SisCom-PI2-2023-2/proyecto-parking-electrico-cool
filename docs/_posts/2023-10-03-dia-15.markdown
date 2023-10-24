@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Día 15"
+date:   2023-10-03 19:30:00 -0300
+categories: posts
+---
+
+Se prueba nuevo modelo de sensor infrarrojo. Pruebas con Thingsboard. Código para leer status de los 6 sensores.
