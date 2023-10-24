@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Día 19"
+date:   2023-10-19 19:30:00 -0300
+categories: posts
+---
+
+Se prueba código para balanceo de carga. Al cargarlo a la placa con los seis sensores conectados devuelve error. Lo debuggeamos en el IDE de Arduino y parece funcionar ok. Resta resolver el primer problema. 
+Por otro lado, se estudia acceso a información de usuarios de clientes en Thingsboard, debemos acceder a esta información para saber qué usuario realizó la reserva y obtener su número de tarjeta RFID (no sabemos si es posible y aún no lo podemos resolver).
