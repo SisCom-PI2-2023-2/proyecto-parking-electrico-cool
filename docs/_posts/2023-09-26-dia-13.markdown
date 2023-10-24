@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Día 13"
+date:   2023-09-26 19:30:00 -0300
+categories: posts
+---
+
+Se define utilizar Dashboard de Thinsgboard para el sistema de reservas, se comienza con la investigación.
