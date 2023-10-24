@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Día 18"
+date:   2023-10-17 19:30:00 -0300
+categories: posts
+---
+
+Se trabaja en la cadena de reglas para agregar en Thingsboard la lógica para realizar una reserva desde los dashboards de los usuarios. Se agregó un botón “Reservar”.
