@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Día 14"
+date:   2023-09-28 19:30:00 -0300
+categories: posts
+---
+
+Presentación de Cadena de Reglas. Comenzamos a publicar Bitácora en formato de posts en la web.
