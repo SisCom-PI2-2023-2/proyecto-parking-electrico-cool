@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Día 15"
+date:   2023-10-05 19:30:00 -0300
+categories: posts
+---
+
+Se continúa con pruebas en Thingsboard utilizando un dashboard para la aplicación de reservas, estamos teniendo inconvenientes para disparar distintas acciones luego del registro de un usuario. 
+Paralelamente se trabajó en la lógica de balanceo de carga para indicar a qué lugar debe ir cada auto.
