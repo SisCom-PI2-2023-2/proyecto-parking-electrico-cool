@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Día 12"
+date:   2023-09-21 19:30:00 -0300
+categories: posts
+---
+
+Se sueldan pines en placas módulos RFID. Se continúa con pruebas sensor infrarrojo. Se realizan pruebas funcionales con sensor de ultrasonido. 
+Se prueba programar placa ESP8266 desde Visual Studio + PlatformIO. Se hacen pruebas con Git/GitHub desde un notebook personal.
