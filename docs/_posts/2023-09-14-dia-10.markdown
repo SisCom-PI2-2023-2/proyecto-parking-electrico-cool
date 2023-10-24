@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Día 10"
+date:   2023-09-14 19:30:00 -0300
+categories: posts
+---
+
+Pruebas para que lector RFID lea únicamente el tag deseado y no otro. Pruebas con sensores de proximidad (infrarrojo y ultrasonido).
