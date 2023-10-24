@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Día 17"
+date:   2023-10-10 19:30:00 -0300
+categories: posts
+---
+
+Se crearon usuarios en Thingsboard y se crearon y asignaron dashboards a cada uno. Se agrega a los dashboards el número en tiempo real de lugares disponibles enviado desde la placa (se envía un número random entre 0 y 6). 
+Para que los usuarios puedan ver el número de lugares disponibles actualizado se compartió todo el usuario de Thingsboard, luego compartir solo un asset y no todo el usuario.
+Código para balanceo de carga, falta probar.
+Se comienza a pasar la bitácora a la web del proyecto.
