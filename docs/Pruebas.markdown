@@ -17,6 +17,13 @@ permalink: /Pruebas/
 3. Se prueba obtener el numero de identificacion asociado a cada tarjeta y manipularlo
 4. Se utiliza el codigo de identificacion ingresado y se lo contrasta con otro previamente ingresado en la placa para obtener coincidencias
 5. Se utiliza la coincidencia entre identificaciones como condicion para la activacion de la tarjeta
+
+## Barrera de entrada
+1. Se prueba el funcionamiento del servomotor mediante codigo, sin utilizar inputs
+2. Se prueba la elevacion de la barrera ante un input, en este caso una señal proveniente del reconocimiento de una tarjeta con el RefId
+3. Se implementa la elevación condicional de la barrera, esta se abre al encontrar coincidencia entre la Id de entada y una previamente guardada en la placa
+
+   
    
 
 
