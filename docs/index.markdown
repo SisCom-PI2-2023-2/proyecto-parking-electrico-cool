@@ -5,16 +5,12 @@
 layout: home
 ---
 
-<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Página</title>
 </head>
-<body style="background-color: #add8e6; color: #ffffff;">
-  <h1>Hola, mundo!</h1>
-  <p>Este es un ejemplo de fondo azul y letras rojas.</p>
+<body style="background-color: #add8e6; color: black;">
 </body>
 </html>
 
