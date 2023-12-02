@@ -11,7 +11,7 @@ Esta es la página principal. La pueden ajustar a su gusto usando [markdown](htt
 
 Así se agrega una imagen. En general se guardan en la carpeta `assets`:
 
-![mtstmichel](/assets/mtstmichel.jpg)
+![mtstmichel](/assets/mtstmichel.jpg=250x250)
 
 El diseño 3D utilizado para la maqueta es el que se muestra en la siguiente imagen:
 ![diseno3D](/assets/Diseño_3D.JPG)
