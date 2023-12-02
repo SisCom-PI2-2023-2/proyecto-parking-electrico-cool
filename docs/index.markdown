@@ -5,6 +5,19 @@
 layout: home
 ---
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página</title>
+</head>
+<body style="background-color: #3498db; color: #ff0000;">
+  <h1>Hola, mundo!</h1>
+  <p>Este es un ejemplo de fondo azul y letras rojas.</p>
+</body>
+</html>
+
 Esta es la página principal. La pueden ajustar a su gusto usando [markdown](https://www.markdownguide.org/basic-syntax/)
 
 ## Ejemplo
