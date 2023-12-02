@@ -13,6 +13,9 @@ Así se agrega una imagen. En general se guardan en la carpeta `assets`:
 
 ![mtstmichel](/assets/mtstmichel.jpg)
 
+El diseño 3D utilizado para la maqueta es el que se muestra en la siguiente imagen:
+![diseno3D](/assets/Diseño_3D.JPG)
+
 
 ## Código incluido
 
