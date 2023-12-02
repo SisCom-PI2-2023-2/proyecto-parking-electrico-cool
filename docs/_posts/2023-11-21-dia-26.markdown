@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Día 26"
+date:   2023-11-21 19:30:00 -0300
+categories: posts
+---
+
+Se continúa trabajando en la maqueta. Se agrega lógica de entrada, verificando que deje ingresar únicamente si se trata de un usuario registrado. A su vez hace la validación de lugares disponibles según exista reserva o no.
