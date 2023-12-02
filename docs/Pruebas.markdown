@@ -4,6 +4,6 @@ title: Pruebas de concepto
 permalink: /Pruebas/
 ---
 
-## Información del equipo...
+## Pruebas de concepto realizadas
 
-Pueden poner links y fotos!
+
