@@ -1,0 +1,548 @@
+{
+  "title": "Ingreso",
+  "image": null,
+  "mobileHide": false,
+  "mobileOrder": null,
+  "configuration": {
+    "description": "",
+    "widgets": {
+      "a27c105c-a7bf-4ad7-a07f-0b33ea04d53f": {
+        "typeFullFqn": "system.cards.attributes_card",
+        "type": "latest",
+        "sizeX": 7.5,
+        "sizeY": 3,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": "",
+              "entityAliasId": "8ac0590b-f03c-6a16-6944-0e9086a45cd9",
+              "dataKeys": [
+                {
+                  "name": "Nombre",
+                  "type": "attribute",
+                  "label": "Nombre",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.07891390596482295,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": 7,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              }
+            },
+            {
+              "type": "entity",
+              "entityAliasId": "8ac0590b-f03c-6a16-6944-0e9086a45cd9",
+              "dataKeys": [
+                {
+                  "name": "Matricula",
+                  "type": "attribute",
+                  "label": "Matricula",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.867073894755825
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              }
+            }
+          ],
+          "timewindow": {
+            "displayValue": "",
+            "selectedTab": 0,
+            "realtime": {
+              "realtimeType": 1,
+              "interval": 1000,
+              "timewindowMs": 60000,
+              "quickInterval": "CURRENT_DAY"
+            },
+            "history": {
+              "historyType": 0,
+              "interval": 1000,
+              "timewindowMs": 60000,
+              "fixedTimewindow": {
+                "startTimeMs": 1696894270195,
+                "endTimeMs": 1696980670195
+              },
+              "quickInterval": "CURRENT_DAY"
+            },
+            "aggregation": {
+              "type": "AVG",
+              "limit": 2500
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "#FFFFFF6A",
+          "color": "rgba(34, 86, 138, 0)",
+          "padding": "8px",
+          "settings": {},
+          "title": "Attributes card",
+          "useDashboardTimewindow": true,
+          "displayTimewindow": true,
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "widgetStyle": {},
+          "widgetCss": "",
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "pageSize": 1024,
+          "units": null,
+          "noDataDisplayMessage": "?",
+          "borderRadius": "0"
+        },
+        "row": 0,
+        "col": 0,
+        "id": "a27c105c-a7bf-4ad7-a07f-0b33ea04d53f"
+      },
+      "fe104c85-e544-f991-25f3-82f62fe6b642": {
+        "typeFullFqn": "system.cards.value_card",
+        "type": "latest",
+        "sizeX": 3,
+        "sizeY": 3,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": "",
+              "deviceId": "74d42ad0-5f53-11ee-9d15-df6249c08ea6",
+              "entityAliasId": "04700838-82a8-a712-74af-6f191c337b42",
+              "dataKeys": [
+                {
+                  "name": "Cantidad Autos Disponibles Total",
+                  "type": "attribute",
+                  "label": "Lugares Disponibles",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.8335303897398976
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              }
+            }
+          ],
+          "timewindow": {
+            "displayValue": "",
+            "selectedTab": 0,
+            "realtime": {
+              "realtimeType": 1,
+              "interval": 1000,
+              "timewindowMs": 60000,
+              "quickInterval": "CURRENT_DAY"
+            },
+            "history": {
+              "historyType": 0,
+              "interval": 1000,
+              "timewindowMs": 60000,
+              "fixedTimewindow": {
+                "startTimeMs": 1696895761246,
+                "endTimeMs": 1696982161246
+              },
+              "quickInterval": "CURRENT_DAY"
+            },
+            "aggregation": {
+              "type": "AVG",
+              "limit": 2500
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "0px",
+          "settings": {
+            "labelPosition": "top",
+            "layout": "square",
+            "showLabel": true,
+            "labelFont": {
+              "family": "Roboto",
+              "size": 16,
+              "sizeUnit": "px",
+              "style": "normal",
+              "weight": "500"
+            },
+            "labelColor": {
+              "type": "constant",
+              "color": "rgba(0, 0, 0, 0.87)",
+              "colorFunction": "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+            },
+            "showIcon": true,
+            "iconSize": 40,
+            "iconSizeUnit": "px",
+            "icon": "local_shipping",
+            "iconColor": {
+              "type": "constant",
+              "color": "#CC54FF",
+              "rangeList": [],
+              "colorFunction": "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+            },
+            "valueFont": {
+              "family": "Roboto",
+              "size": 52,
+              "sizeUnit": "px",
+              "style": "normal",
+              "weight": "500"
+            },
+            "valueColor": {
+              "type": "constant",
+              "color": "rgba(0, 0, 0, 0.87)",
+              "colorFunction": "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+            },
+            "showDate": false,
+            "dateFormat": {
+              "format": null,
+              "lastUpdateAgo": true,
+              "custom": false
+            },
+            "dateFont": {
+              "family": "Roboto",
+              "size": 12,
+              "sizeUnit": "px",
+              "style": "normal",
+              "weight": "500"
+            },
+            "dateColor": {
+              "type": "constant",
+              "color": "rgba(0, 0, 0, 0.38)",
+              "colorFunction": "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+            },
+            "background": {
+              "type": "color",
+              "color": "#fff",
+              "overlay": {
+                "enabled": false,
+                "color": "rgba(255,255,255,0.72)",
+                "blur": 3
+              }
+            }
+          },
+          "title": "Value card",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "units": "",
+          "decimals": 0,
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "widgetStyle": {},
+          "actions": {},
+          "configMode": "basic",
+          "displayTimewindow": true,
+          "margin": "0px",
+          "borderRadius": "0px",
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": "",
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "titleFont": {
+            "size": 12,
+            "sizeUnit": "px",
+            "family": null,
+            "weight": null,
+            "style": null,
+            "lineHeight": "1.6"
+          },
+          "titleIcon": "",
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "14px",
+          "timewindowStyle": {
+            "showIcon": true,
+            "iconSize": "14px",
+            "icon": "query_builder",
+            "iconPosition": "left",
+            "font": {
+              "size": 12,
+              "sizeUnit": "px",
+              "family": null,
+              "weight": null,
+              "style": null,
+              "lineHeight": "1"
+            },
+            "color": null
+          }
+        },
+        "row": 0,
+        "col": 0,
+        "id": "fe104c85-e544-f991-25f3-82f62fe6b642"
+      },
+      "5a666ec5-a43b-0fdd-c0c3-aff320a4bff3": {
+        "typeFullFqn": "system.control_widgets.update_attributes",
+        "type": "rpc",
+        "sizeX": 4,
+        "sizeY": 2,
+        "config": {
+          "showTitle": false,
+          "backgroundColor": "#e6e7e8",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "0px",
+          "settings": {
+            "buttonText": "Reservar",
+            "entityAttributeType": "SERVER_SCOPE",
+            "entityParameters": "{\"Procesar\":true}",
+            "styleButton": {
+              "isRaised": true,
+              "isPrimary": false,
+              "bgColor": null,
+              "textColor": "#780E0E"
+            }
+          },
+          "title": "Update device attribute",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "widgetStyle": {},
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {},
+          "targetDeviceAliases": [],
+          "datasources": [],
+          "targetDeviceAliasIds": [
+            "a21c9482-e782-bd21-7ac3-8bece20ed9b2"
+          ],
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": "?"
+        },
+        "row": 0,
+        "col": 0,
+        "id": "5a666ec5-a43b-0fdd-c0c3-aff320a4bff3"
+      }
+    },
+    "states": {
+      "0": {
+        "name": "Ingreso",
+        "root": true,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "a27c105c-a7bf-4ad7-a07f-0b33ea04d53f": {
+                "sizeX": 12,
+                "sizeY": 3,
+                "row": 0,
+                "col": 0
+              },
+              "fe104c85-e544-f991-25f3-82f62fe6b642": {
+                "sizeX": 3,
+                "sizeY": 3,
+                "row": 3,
+                "col": 7
+              },
+              "5a666ec5-a43b-0fdd-c0c3-aff320a4bff3": {
+                "sizeX": 4,
+                "sizeY": 2,
+                "row": 3,
+                "col": 1
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "columns": 24,
+              "margin": 10,
+              "outerMargin": true,
+              "backgroundSizeMode": "100%"
+            }
+          }
+        }
+      },
+      "1": {
+        "name": "Usuario",
+        "root": false,
+        "layouts": {
+          "main": {
+            "widgets": {},
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "columns": 24,
+              "margin": 10,
+              "outerMargin": true,
+              "backgroundSizeMode": "100%"
+            }
+          }
+        }
+      }
+    },
+    "entityAliases": {
+      "845e1546-9099-6958-879f-7f42c176e573": {
+        "id": "845e1546-9099-6958-879f-7f42c176e573",
+        "alias": "Boton",
+        "filter": {
+          "type": "singleEntity",
+          "resolveMultiple": false,
+          "singleEntity": {
+            "entityType": "ASSET",
+            "id": "103e0b90-5f53-11ee-9d15-df6249c08ea6"
+          }
+        }
+      },
+      "8ac0590b-f03c-6a16-6944-0e9086a45cd9": {
+        "id": "8ac0590b-f03c-6a16-6944-0e9086a45cd9",
+        "alias": "User",
+        "filter": {
+          "type": "singleEntity",
+          "resolveMultiple": false,
+          "singleEntity": {
+            "entityType": "CURRENT_USER",
+            "id": "13814000-1dd2-11b2-8080-808080808080"
+          }
+        }
+      },
+      "a21c9482-e782-bd21-7ac3-8bece20ed9b2": {
+        "id": "a21c9482-e782-bd21-7ac3-8bece20ed9b2",
+        "alias": "alias",
+        "filter": {
+          "type": "singleEntity",
+          "resolveMultiple": false,
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "74d42ad0-5f53-11ee-9d15-df6249c08ea6"
+          }
+        }
+      },
+      "ff05c06d-4ef3-3816-068d-753488dff512": {
+        "id": "ff05c06d-4ef3-3816-068d-753488dff512",
+        "alias": "alias2",
+        "filter": {
+          "type": "singleEntity",
+          "resolveMultiple": false,
+          "singleEntity": {
+            "entityType": "ASSET",
+            "id": "276ff110-6d46-11ee-9d7d-a533898c4c2a"
+          }
+        }
+      },
+      "e218f1f6-6e3a-36bc-d6a5-cee6ea95a44d": {
+        "id": "e218f1f6-6e3a-36bc-d6a5-cee6ea95a44d",
+        "alias": "Procesar",
+        "filter": {
+          "type": "singleEntity",
+          "resolveMultiple": false,
+          "singleEntity": {
+            "entityType": "ASSET",
+            "id": "276ff110-6d46-11ee-9d7d-a533898c4c2a"
+          }
+        }
+      },
+      "ec3d2655-6daf-5e97-7bf7-94adc364316c": {
+        "id": "ec3d2655-6daf-5e97-7bf7-94adc364316c",
+        "alias": "Procesa",
+        "filter": {
+          "type": "singleEntity",
+          "resolveMultiple": false,
+          "singleEntity": {
+            "entityType": "ASSET",
+            "id": "276ff110-6d46-11ee-9d7d-a533898c4c2a"
+          }
+        }
+      },
+      "62b9db73-b960-5470-80eb-87ef17390586": {
+        "id": "62b9db73-b960-5470-80eb-87ef17390586",
+        "alias": "a",
+        "filter": {
+          "type": "singleEntity",
+          "resolveMultiple": false,
+          "singleEntity": {
+            "entityType": "CURRENT_USER",
+            "id": "13814000-1dd2-11b2-8080-808080808080"
+          }
+        }
+      },
+      "c958a8cb-62f1-69d8-0e38-53d8e7f27620": {
+        "id": "c958a8cb-62f1-69d8-0e38-53d8e7f27620",
+        "alias": "1",
+        "filter": {
+          "type": "singleEntity",
+          "resolveMultiple": false,
+          "singleEntity": {
+            "entityType": "ASSET",
+            "id": "276ff110-6d46-11ee-9d7d-a533898c4c2a"
+          }
+        }
+      },
+      "04700838-82a8-a712-74af-6f191c337b42": {
+        "id": "04700838-82a8-a712-74af-6f191c337b42",
+        "alias": "2",
+        "filter": {
+          "type": "singleEntity",
+          "resolveMultiple": false,
+          "singleEntity": {
+            "entityType": "ASSET",
+            "id": "e2302530-67bd-11ee-8147-5d5087fc85dc"
+          }
+        }
+      }
+    },
+    "filters": {},
+    "timewindow": {
+      "displayValue": "",
+      "hideInterval": false,
+      "hideLastInterval": false,
+      "hideQuickInterval": false,
+      "hideAggregation": false,
+      "hideAggInterval": false,
+      "hideTimezone": false,
+      "selectedTab": 0,
+      "realtime": {
+        "realtimeType": 0,
+        "interval": 1000,
+        "timewindowMs": 60000,
+        "quickInterval": "CURRENT_DAY"
+      },
+      "history": {
+        "historyType": 0,
+        "interval": 1000,
+        "timewindowMs": 60000,
+        "fixedTimewindow": {
+          "startTimeMs": 1695963610057,
+          "endTimeMs": 1696050010057
+        },
+        "quickInterval": "CURRENT_DAY"
+      },
+      "aggregation": {
+        "type": "AVG",
+        "limit": 2500
+      }
+    },
+    "settings": {
+      "stateControllerId": "entity",
+      "showTitle": false,
+      "showDashboardsSelect": true,
+      "showEntitiesSelect": true,
+      "showDashboardTimewindow": true,
+      "showDashboardExport": true,
+      "toolbarAlwaysOpen": true,
+      "titleColor": "rgba(0,0,0,0.870588)",
+      "showDashboardLogo": false,
+      "dashboardLogoUrl": null,
+      "hideToolbar": false,
+      "showFilters": true,
+      "showUpdateDashboardImage": true,
+      "dashboardCss": ""
+    }
+  },
+  "externalId": null,
+  "name": "Ingreso"
+}
