@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Día 21"
+date:   2023-10-26 19:30:00 -0300
+categories: posts
+---
+
+Cada uno de los usuarios tiene guardada la info de si realizó una reserva o no. Avanzamos con las pruebas por los sensores de proximidad, estamos enviando la info ok para 5 sensores (ya que uno está roto), verificamos que la indicación del lugar funciona ok respecto a la lógica del balanceo de carga. Relevamos el identificador de tarjeta RFID para cada usuario, resta asignar esta info en Thingsboard.
