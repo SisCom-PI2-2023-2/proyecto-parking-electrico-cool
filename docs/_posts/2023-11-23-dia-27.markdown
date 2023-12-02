@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Día 27"
+date:   2023-11-23 19:30:00 -0300
+categories: posts
+---
+
+Se continúa trabajando en la maqueta. Se toma desde la nube el número final de lugares libres (considerando ocupados y reservas), se trabaja en lógica y conexiones para mostrarlo en un display 7 segmentos utilizando un decodificador BCD a 7seg (falta depurar este código). Se corrigen detalles en la lógica de Thingsboard ya que al reservar el usuario quedaba en status de reserva por más que ya haya ingresado al estacionamiento.
