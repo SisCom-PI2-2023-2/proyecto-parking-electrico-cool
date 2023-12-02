@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Día 24"
+date:   2023-11-14 19:30:00 -0300
+categories: posts
+---
+
+Se trabaja en la lógica para encender los leds según el status de cada sensor. Además se indica mediante un parpadeo de led el espacio a donde debe dirigirse el auto según la lógica de balanceo de carga. El ingreso del auto se le envía desde un método RPC.
