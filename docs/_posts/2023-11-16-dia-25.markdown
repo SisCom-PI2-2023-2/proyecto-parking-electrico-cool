@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Día 25"
+date:   2023-11-16 19:30:00 -0300
+categories: posts
+---
+
+Se comienza a trabajar en la maqueta. Además, se realizan las conexiones con la tarjeta RFID, se envía información de detección a la nube.
