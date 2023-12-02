@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Día 20"
+date:   2023-10-24 19:30:00 -0300
+categories: posts
+---
+
+Se logra cargar el código de balanceo de carga a la placa así como configurar correctamente los 6 sensores, sin embargo no estamos logrando enviar la información sensada correctamente (tenemos algunos sensores con problemas de sensibilidad, conexiones, etc.), seguiremos trabajando en este problema. Luego, en cuanto a la limitación de no poder acceder a los atributos de los usuarios se trabaja en solución alternativa que consta de realizar una lista con info del ID del usuario y si reservó o no. Y eso lo guardamos en un asset global.
