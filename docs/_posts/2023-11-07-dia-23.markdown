@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Día 23"
+date:   2023-11-07 19:30:00 -0300
+categories: posts
+---
+
+Se pasa la lógica de los sensores a placa nueva ESP 32 (porque tiene más pines GPIO). Tuvimos algunos problemas para programar la placa que posteriormente pudimos resolver. Se comienza a trabajar con la lógica para los leds RGB.
