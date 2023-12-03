@@ -12,7 +12,7 @@ permalink: /Pruebas/
 </body>
 </html>
 ## Balanceo de carga:
-1. Se pureba una version sencilla del codigo, sin leds ni sensores. La prueba consta en ingresar valores entre 0 y 2 que indiquen la cantidad de lugares ocupados en cada grupo de lugares de estacionamiento. EL algoritmo debe identificar cual de los 3 grupos es el menor e informarlo.
+1. Se prueba una version sencilla del codigo, sin leds ni sensores. La prueba consta en ingresar valores entre 0 y 2 que indiquen la cantidad de lugares ocupados en cada grupo de lugares de estacionamiento. EL algoritmo debe identificar cual de los 3 grupos es el menor e informarlo.
 
 2. Se prueba el algoritmo de balanceo utilizando una porción reducida de sensores de proximidad. Esta prueba es similar a la anterior, solo que no se ingresan los numeros manualmente, sinó que se obtienen valore reales obtenidos de los sensores, posterior a su calibracion.  
 
@@ -35,7 +35,7 @@ permalink: /Pruebas/
 
 ## Barrera de entrada
 1. Se prueba el funcionamiento del servomotor mediante codigo, sin utilizar inputs
-2. Se prueba la elevacion de la barrera ante un input, en este caso una señal proveniente del reconocimiento de una tarjeta con el RefId
+2. Se prueba la elevacion de la barrera ante un input, en este caso una señal proveniente del reconocimiento de una tarjeta con el RfId
 3. Se implementa la elevación condicional de la barrera, esta se abre al encontrar coincidencia entre la Id de entada y una previamente guardada en la placa
 
    
