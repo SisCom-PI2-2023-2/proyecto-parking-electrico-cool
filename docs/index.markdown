@@ -44,21 +44,7 @@ En cuanto el usuario decida retirarse del estacionamiento la valla de salida se 
 
 Toda la información del sistema está centralizada en la nube (utilizando la plataforma Thingsboard) de forma de mantener los distintos dispositivos conectados y actualizados.
 
-El diseño 3D utilizado para la maqueta es el que se muestra en la siguiente imagen
-
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
-
-  <div style="text-align: center;">
-    <img src="/assets/Diseño_3D.JPG" alt="Descripción de la imagen">
-  </div>
-
-</body>
-</html>
+El diseño 3D utilizado para la maqueta es el que se muestra en la siguiente imagen:
 
 ![diseno3D](/assets/Diseño_3D.JPG)
 
