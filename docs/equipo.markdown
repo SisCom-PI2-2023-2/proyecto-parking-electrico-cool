@@ -22,7 +22,7 @@ permalink: /Equipo/
         max-width: 800px; /* Adjust the width based on your design */
         margin: 0 auto; /* Center the container */
         padding: 20px; /* Add some padding to the container */
-        background-color: indigo; /* Set a white background for the container */
+        background-color: #e65c70; /* Set a white background for the container */
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow */
     }
     .image-container img {
@@ -40,14 +40,17 @@ permalink: /Equipo/
         <div>
             <img src="/proyecto-volt-park/assets/Yo.jpg" alt="Image 1">
             <p class="subtext">Christian Zorrón - 231768</p>
+            <p class="subtext">Ingeniería en Electrónica</p>
         </div>
         <div>
             <img src="/proyecto-volt-park/assets/squirtle.png" alt="Image 2">
             <p class="subtext">Pilar Martínez - 268474</p>
+            <p class="subtext">Ingeniería en Telecomunicaciones</p>
         </div>
         <div>
             <img src="/proyecto-volt-park/assets/bulbasaur.png" alt="Image 3">
             <p class="subtext">Bruno de León - 220743</p>
+            <p class="subtext">Ingeniería en Electrónica</p>
         </div>
     </div>
 </body>
