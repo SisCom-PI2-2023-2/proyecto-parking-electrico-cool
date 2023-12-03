@@ -37,7 +37,6 @@ permalink: /equipo/
 </style>
 </head>
 <body>
-    style="background-color: #add8e6; color: black;">
     <div class="image-container">
         <div>
             <img src="assets/bulbasaur.png" alt="Image 1">
