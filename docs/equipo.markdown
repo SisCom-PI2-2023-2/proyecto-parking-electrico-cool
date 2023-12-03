@@ -9,7 +9,7 @@ permalink: /equipo/
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Page</title>
-   <style>
+    <style>
     body {
         background-color: #e0f7fa; /* Light blue background color */
         margin: 0; /* Remove default body margin */
