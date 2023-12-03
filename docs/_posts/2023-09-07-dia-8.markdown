@@ -148,7 +148,7 @@ Las conexiones utilizadas se pueden apreciar en la siguiente imagen:
 <body>
 
     <video width="640" height="360" controls>
-        <source src="proyecto-volt-park/assets/RFID_video.mp4" type="video/mp4">
+        <source src="/proyecto-volt-park/assets/RFID_video.mp4" type="video/mp4">
         Tu navegador no soporta el elemento de video.
     </video>
 
