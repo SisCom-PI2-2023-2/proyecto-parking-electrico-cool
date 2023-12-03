@@ -472,3 +472,24 @@ void agregarGR3() {
   }
 }
 ```
+
+En el video que sigue se puede ver la prueba de encendido de leds de acuerdo al status del sensor:
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página con Video</title>
+</head>
+<body>
+
+    <video width="640" height="360" controls>
+        <source src="/proyecto-volt-park/assets/Leds_Sensores.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+
+</body>
+</html>
+
+
+En
