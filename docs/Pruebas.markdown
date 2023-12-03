@@ -22,8 +22,8 @@ permalink: /Pruebas/
 
 5. Se agrega la funcion rgb para indicar el estado del estacionamiento. La verificacion de esta prueba concluye en la version final del modulo de balanceo de carga. Se trabaja con 6 sensores de proximidad y 6 leds rgb.
 
-## Sensor RefId
-1. Se prueba el reconocimiento de las tarjetas de identificacion con la librería de RefId para Arduino. En esta prueba inicial se comprueba el correcto funcionamiento de la librería obtenida y se estudian los metodos de recopilacion de informacion del modulo RedId.
+## Sensor Rfid
+1. Se prueba el reconocimiento de las tarjetas de identificacion con la librería de Rfid para Arduino. En esta prueba inicial se comprueba el correcto funcionamiento de la librería obtenida y se estudian los metodos de recopilacion de informacion del modulo Rfid.
 
 2. Se utiliza la lectura de la tarjeta como imput para la activacion de la barrera. En esta prueba intentamos empezar a unir los conceptos de verificacion y apertura de la barrera utilizando un booleano generado por el correcto reconocimiento de una tarjeta como señal para la aptertura. 
 
