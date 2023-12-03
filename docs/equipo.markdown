@@ -10,6 +10,33 @@ permalink: /equipo/
     <title>Equipo</title>
 
 </head>
+<style>
+    body {
+        background-color: #e0f7fa; /* Light blue background color */
+        margin: 0; /* Remove default body margin */
+        font-family: Arial, sans-serif; /* Choose a suitable font */
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 800px; /* Adjust the width based on your design */
+        margin: 0 auto; /* Center the container */
+        padding: 20px; /* Add some padding to the container */
+        background-color: white; /* Set a white background for the container */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    }
+
+    .image-container img {
+        max-width: 30%; /* Adjust the width of each image */
+        height: auto;
+        margin-bottom: 10px; /* Add space between image and subtext */
+    }
+
+    .subtext {
+        text-align: center;
+    }
+</style>
 <body>
     <div class="image-container">
         <div>
