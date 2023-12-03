@@ -138,7 +138,8 @@ Las conexiones utilizadas se pueden apreciar en la siguiente imagen:
 
 ![conexionesrfid](/proyecto-volt-park/assets/RFID_conexion.jpeg)
 
-<!DOCTYPE html>
+A continuación se puede ver un video con la prueba descripta anteriormente:
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
