@@ -12,23 +12,23 @@ permalink: /Equipo/
     <title>Your Page</title>
    <style>
     body {
-        background-color: #add8e6; /* Light blue background color */
-        margin: 0; /* Remove default body margin */
-        font-family: Arial, sans-serif; /* Choose a suitable font */
+        background-color: #add8e6; 
+        margin: 0; 
+        font-family: Arial, sans-serif; 
     }
     .image-container {
         display: flex;
         justify-content: space-between;
-        max-width: 800px; /* Adjust the width based on your design */
-        margin: 0 auto; /* Center the container */
-        padding: 20px; /* Add some padding to the container */
-        background-color: #e65c70; /* Set a white background for the container */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow */
+        max-width: 800px; 
+        margin: 0 auto; 
+        padding: 20px; 
+        background-color: #e65c70; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
     .image-container img {
-        width: 130px; /* Adjust the width of each image */
+        width: 130px; 
         height: 205px;
-        margin-bottom: 20px; /* Add space between image and subtext */
+        margin-bottom: 20px; 
     }
     .subtext {
         text-align: left;
