@@ -22,7 +22,7 @@ permalink: /Equipo/
         max-width: 800px; 
         margin: 0 auto; 
         padding: 20px; 
-        background-color: #e65c70; 
+        background-color: #f07946; 
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
     .image-container img {
@@ -31,7 +31,7 @@ permalink: /Equipo/
         margin-bottom: 20px; 
     }
     .subtext {
-        text-align: left;
+        text-align: center;
     }
 </style>
 </head>
@@ -52,6 +52,9 @@ permalink: /Equipo/
             <p class="subtext">Bruno de León - 220743</p>
             <p class="subtext">Ingeniería en Electrónica</p>
         </div>
+    </div>
+    <div>
+        <p>El equipo anterior es el responsable por el contenido publicado en esta web e indicamos conocer y acordar las reglas de netiqueta</p>
     </div>
 </body>
 </html>
