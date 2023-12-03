@@ -38,7 +38,7 @@ permalink: /Equipo/
 <body>
     <div class="image-container">
         <div>
-            <img src="assets/Yo.jpg" alt="Image 1">
+            <img src="docs/assets/Yo.jpg" alt="Image 1">
             <p class="subtext">Christian Zorrón - 231768</p>
         </div>
         <div>
