@@ -15,7 +15,6 @@ permalink: /equipo/
         margin: 0; /* Remove default body margin */
         font-family: Arial, sans-serif; /* Choose a suitable font */
     }
-
     .image-container {
         display: flex;
         justify-content: space-between;
@@ -25,20 +24,17 @@ permalink: /equipo/
         background-color: white; /* Set a white background for the container */
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
     }
-
     .image-container img {
         max-width: 30%; /* Adjust the width of each image */
         height: auto;
         margin-bottom: 10px; /* Add space between image and subtext */
     }
-
     .subtext {
         text-align: center;
     }
 </style>
 </head>
     <body>
-
         <div>
             <img src="assets/bulbasaur.png" alt="Image 1">
             <p class="subtext">Bruno de León - 220743</p>
