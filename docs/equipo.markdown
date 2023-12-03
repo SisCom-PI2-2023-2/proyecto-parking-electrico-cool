@@ -16,11 +16,6 @@ permalink: /Equipo/
         margin: 0; 
         font-family: Arial, sans-serif; 
     }
-        <header>
-            <div class="header-wrapper">
-                <img src="/proyecto-volt-park/assets/bulbasaur.png" alt="Your Logo">
-            </div>
-        </header>
     .image-container {
         display: flex;
         justify-content: space-between;
