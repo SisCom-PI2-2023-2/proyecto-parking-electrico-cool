@@ -295,3 +295,8 @@ void loop() {
   }
 }
 ```
+Se muestra a continuación un video donde desde la plataforma Thingsboard se indica el encendido de un led de la placa ESP8266
+
+![videoThingsboard](/assets/Conexion_Thingsboard.mp4)
+
+
