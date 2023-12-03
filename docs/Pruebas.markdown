@@ -13,7 +13,7 @@ permalink: /Pruebas/
 </html>
 ## Balanceo de carga:
 1. Se pureba una version sencilla del codigo, sin leds ni sensores. La prueba consta en ingresar valores entre 0 y 2 que indiquen la cantidad de lugares ocupados en cada grupo de lugares de estacionamiento. EL algoritmo debe identificar cual de los 3 grupos es el menor e informarlo.
-</br>
+
 2. Se prueba el algoritmo de balanceo utilizando una porción reducida de sensores de proximidad. Esta prueba es similar a la anterior, solo que no se ingresan los numeros manualmente, sinó que se obtienen valore reales obtenidos de los sensores, posterior a su calibracion. 
 3. Se llega a una version reducida con sensores y leds. Esta prueba utiliza una cantidd de sensores menor a la exigida para simplificar el debuggeo, y usa una cantidad de leds concistente a la cantidad de sensores. No se implementa el estado de indicacion de lugar correspondiente, la cual indica con una luz azul proveniente del led rgb cual es el lugar donde el vehiculo debe estacionar. 
 4. Se implementa la version con el total de sensores y leds. En esta version se implementa el total de sensores de proximidad y de leds rgb, pero se siguen utilizando unicamente los estados de ocupado y libre, no se indica el lugar correspondiente de estacionamiento.
