@@ -44,13 +44,22 @@ En cuanto el usuario decida retirarse del estacionamiento la valla de salida se 
 
 Toda la información del sistema está centralizada en la nube (utilizando la plataforma Thingsboard) de forma de mantener los distintos dispositivos conectados y actualizados.
 
-## Ejemplo
+El diseño 3D utilizado para la maqueta es el que se muestra en la siguiente imagen
 
-Así se agrega una imagen. En general se guardan en la carpeta `assets`:
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
 
-![mtstmichel](/assets/mtstmichel.jpg)
+  <div style="text-align: center;">
+    <img src="/assets/Diseño_3D.JPG" alt="Descripción de la imagen">
+  </div>
 
-El diseño 3D utilizado para la maqueta es el que se muestra en la siguiente imagen:
+</body>
+</html>
+
 ![diseno3D](/assets/Diseño_3D.JPG)
 
 
