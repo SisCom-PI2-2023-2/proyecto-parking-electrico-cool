@@ -309,7 +309,7 @@ Se muestra a continuación un video donde desde la plataforma Thingsboard se ind
   <h1>Mi Video</h1>
 
   <video width="640" height="360" controls>
-    <source src="/docs/assets/Conexion_Thingsboard.mp4" type="video/mp4">
+    <source src="proyecto-volt-park/docs/assets/Conexion_Thingsboard.mp4" type="video/mp4">
     Tu navegador no soporta el elemento de video.
   </video>
 
