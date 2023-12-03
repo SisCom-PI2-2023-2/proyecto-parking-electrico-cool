@@ -7,3 +7,112 @@ categories: posts
 
 Se prueba código para balanceo de carga. Al cargarlo a la placa con los seis sensores conectados devuelve error. Lo debuggeamos en el IDE de Arduino y parece funcionar ok. Resta resolver el primer problema. 
 Por otro lado, se estudia acceso a información de usuarios de clientes en Thingsboard, debemos acceder a esta información para saber qué usuario realizó la reserva y obtener su número de tarjeta RFID (no sabemos si es posible y aún no lo podemos resolver).
+
+El código utilizado fue el siguiente:
+
+```c++
+int S1=D0;   /*pines que voy a usar con los sensores para los botoes, suponiendo que uso pines del 1 al 6*, pin7 es accionador de entrada de vehiculo*/ 
+int S2=D1;
+int S3=D2;
+int S4=D3;
+int S5=D4;
+int S6=D5;
+/*int L1=D6;
+int L2=D7;
+int L3=D8;
+int L4=S1;
+int L5=S1;
+int L6=S3;*/
+/*int pinIngreso=D6;*/
+
+  int G1=2;   /*variables integer iguales a la cantidad de lugares ocupados en cada grupo*/
+  int G2=1;
+  int G3=2;
+
+void balancear();
+void setup() {
+  Serial.begin(9600);
+
+  bool ingreso= false;
+  pinMode(S1, INPUT);
+  pinMode(S2, INPUT);
+  pinMode(S3, INPUT);
+  pinMode(S4,INPUT);
+  pinMode(S5, INPUT);
+  pinMode(S6, INPUT);
+  /*pinMode(pinIngreso,INPUT);*/
+/*  pinMode(L1, INPUT);
+  pinMode(L2, INPUT);
+  pinMode(L3, INPUT);
+  pinMode(L4,INPUT);
+  pinMode(L5, INPUT);
+  pinMode(L6, INPUT);*/
+  
+}
+
+void loop() {
+/*G1=digitalRead(S1)+digitalRead(S2);  /*guardo en las variables los estados de los estacionamientos*/
+/*G2=digitalRead(S3)+digitalRead(S4);
+G3=digitalRead(S5)+digitalRead(S6);
+/*int ingreso= digitalRead(pinIngreso);*/
+int ingreso =1;
+if(ingreso){
+  balancear();
+}
+delay(5000);
+ingreso=0;
+  
+
+}
+
+
+void balancear(){
+if((G1 < G2 && G1 < G3)||(G1==G2 && G1<G3)||(G1 == G3 && G1 < G2) ||(G1==G2&&G1==G3 )){
+  agregarG1();
+}
+else{
+  if((G2 < G1 && G2 < G3)||(G2 == G1 && G2 <G3)||(G2==G3 && G2 <G1)){
+    agregarG2();
+  }
+  else{
+    if((G3 < G1 && G3 < G2)||(G3 < G2 && G3< G1)){
+      agregarG3();
+    }
+  }
+}
+  
+}
+
+void agregarG1(){
+  if(digitalRead(S1)){
+  /*digitalWrite(L2,1);*/
+  Serial.println("Lugar n2");
+}
+else{
+  /*digitalWrite(L1,1);*/
+  Serial.println("lugar n1");
+}
+}
+
+void agregarG2(){
+  if(digitalRead(S3)){
+  /*digitalWrite(L4,1);*/
+  Serial.println("lugar n4");
+}
+else{
+  /*digitalWrite(L3,1);*/
+  Serial.println("lugar n3");
+}
+}
+
+void agregarG3(){
+  if(digitalRead(S5)){
+  /*digitalWrite(L6,1);*/
+  Serial.println("lugar n6");
+}
+else{
+  /*digitalWrite(L5,1);*/
+  Serial.println("lugar n5");
+}
+}
+```
