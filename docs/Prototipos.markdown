@@ -4,6 +4,14 @@ title: Prototipos
 permalink: /Prototipos/
 ---
 
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="background-color: #add8e6; color: black;">
+</body>
+</html>
 ## Prototipo de balanceo de carga
 Para el modulo del balanceo de carga optamos por centralizar tanto la informacion como el algoritmo de balanceo en una placa ESP32.
 El algoritmo funciona agrupando los 6 lugares de estacionamiento disponibles en 3 grupos de 2 lugares, simulando las 3 fases de la corriente trifasica.
