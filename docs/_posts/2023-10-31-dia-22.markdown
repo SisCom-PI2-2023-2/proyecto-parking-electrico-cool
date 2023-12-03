@@ -6,3 +6,30 @@ categories: posts
 ---
 
 Código para pasar un número entero a binario, análisis para mostrarlo en display 7 segmentos. 
+
+El código realizado es el siguiente (el mismo no se llegó a probar):
+
+```c++
+void setup() {
+  Serial.begin(9600);
+  int numeroEntero = 1234;  // Reemplaza esto con tu número entero de entrada
+  int bcd[4];
+
+  // Convierte el número entero a BCD
+  for (int i = 3; i >= 0; i--) {
+    bcd[i] = numeroEntero % 10;
+    numeroEntero /= 10;
+  }
+
+  // Imprime el resultado en BCD
+  for (int i = 0; i < 4; i++) {
+    Serial.print(bcd[i]);
+  }
+}
+
+void loop() {
+  // Tu código principal puede ir aquí
+}
+```
+
+El análisis para utilizar el decodificador BCD a 7 segmentos se realizó desde la siguiente web: https://wp.7robot.net/decodificadores-de-bcd-a-7-segmentos/
