@@ -3,6 +3,7 @@ layout: page
 title: Equipo
 permalink: /equipo/
 ---
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -54,8 +55,6 @@ permalink: /equipo/
 </html>
 
 ## Información del equipo...
-![Yo](/assets/Yo.jpg)
-![squirtle](/assets/squirtle.png)
-![bulbasaur](/assets/bulbasaur.png)
+
 
 Pueden poner links y fotos!
