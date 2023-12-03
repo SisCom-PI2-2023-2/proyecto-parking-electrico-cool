@@ -6,3 +6,123 @@ categories: posts
 ---
 
 Se pasa la lógica de los sensores a placa nueva ESP 32 (porque tiene más pines GPIO). Tuvimos algunos problemas para programar la placa que posteriormente pudimos resolver. Se comienza a trabajar con la lógica para los leds RGB.
+
+El código utilizado es el siguiente:
+
+```c++
+int S1=23;   
+int S2=22;
+int S3=21;
+int S4=19;
+int S5=18;
+int S6=5;
+int L1=4;
+int L2=0;
+/*int L3=D8;
+int L4=S1;
+int L5=S1;
+int L6=S3;*/
+/*int pinIngreso=D6;*/
+
+  int GR1=0;   /*variables integer iguales a la cantidad de lugares ocupados en cada grupo*/
+  int GR2=0;
+  int GR3=0;
+
+void balancear();
+void setup() {
+  Serial.begin(9600);
+
+  bool ingreso= false;
+  pinMode(S1, INPUT);
+  pinMode(S2, INPUT);
+  pinMode(S3, INPUT);
+  pinMode(S4,INPUT);
+  pinMode(S5, INPUT);
+  pinMode(S6, INPUT);
+  /*pinMode(pinIngreso,INPUT);*/
+  pinMode(L1, OUTPUT);
+  pinMode(L2, OUTPUT);
+  /*pinMode(L3, INPUT);
+  pinMode(L4,INPUT);
+  pinMode(L5, INPUT);
+  pinMode(L6, INPUT);*/
+  digitalWrite(L1, 0);
+  digitalWrite(L2, 1);
+  
+}
+
+void loop() {
+
+
+/*int ingreso= digitalRead(pinIngreso);*/
+int ingreso =1;
+if(ingreso){
+  balancear();
+}
+delay(1000);
+/*ingreso=0;*/
+}
+
+
+void balancear(){
+int GR1=(!digitalRead(S1))+(!digitalRead(S2));  /*guardo en las variables los estados de los estacionamientos*/
+int GR2=(!digitalRead(S3))+(!digitalRead(S4));
+int GR3=(!digitalRead(S5))+(!digitalRead(S6));
+Serial.println(GR1);
+Serial.println(GR2);
+Serial.println(GR3);
+delay(100);
+if((GR1 < GR2 && GR1 < GR3)||(GR1==GR2 && GR1<GR3)||(GR1 == GR3 && GR1 < GR2) ||(GR1==GR2&&GR1==GR3 )){
+  Serial.println("Entro a G1");
+  agregarGR1();
+}
+else{
+  if((GR2 < GR1 && GR2 < GR3)||(GR2 == GR1 && GR2 <GR3)||(GR2==GR3 && GR2 <GR1)){
+    Serial.println("Entro a G2");
+    agregarGR2();
+  }
+  else{
+    if((GR3 < GR1 && GR3 < GR2)||(GR3 < GR2 && GR3< GR1)){
+      Serial.println("Entro a G3");
+      agregarGR3();
+    }
+  }
+}
+  
+}
+
+void agregarGR1(){
+  if(!digitalRead(S1)){
+  Serial.println("Lugar n2");
+}
+else{
+  /*digitalWrite(L1,1);*/
+  Serial.println("lugar n1");
+}
+}
+
+void agregarGR2(){
+  digitalWrite(L2,0);
+  delay(100);
+  digitalWrite(L1,1);
+  if(!digitalRead(S3)){
+  /*digitalWrite(L4,1);*/
+  Serial.println("lugar n4");
+}
+else{
+  /*digitalWrite(L3,1);*/
+  Serial.println("lugar n3");
+}
+}
+
+void agregarGR3(){
+  if(!digitalRead(S5)){
+  /*digitalWrite(L6,1);*/
+  Serial.println("lugar n6");
+}
+else{
+  /*digitalWrite(L5,1);*/
+  Serial.println("lugar n5");
+}
+}
+```
