@@ -6,3 +6,118 @@ categories: posts
 ---
 
 Cada uno de los usuarios tiene guardada la info de si realizó una reserva o no. Avanzamos con las pruebas por los sensores de proximidad, estamos enviando la info ok para 5 sensores (ya que uno está roto), verificamos que la indicación del lugar funciona ok respecto a la lógica del balanceo de carga. Relevamos el identificador de tarjeta RFID para cada usuario, resta asignar esta info en Thingsboard.
+
+El código utilizado fue el siguiente:
+
+```c++
+int S1=D1;   /*pines que voy a usar con los sensores para los botoes, suponiendo que uso pines del 1 al 6*, pin7 es accionador de entrada de vehiculo*/ 
+int S2=D2;
+int S3=D4;
+int S4=D5;
+int S5=D6;
+int S6=D3;
+/*int L1=D6;
+int L2=D7;
+int L3=D8;
+int L4=S1;
+int L5=S1;
+int L6=S3;*/
+/*int pinIngreso=D6;*/
+
+  int G1=0;   /*variables integer iguales a la cantidad de lugares ocupados en cada grupo*/
+  int G2=0;
+  int G3=0;
+
+void balancear();
+void setup() {
+  Serial.begin(9600);
+
+  bool ingreso= false;
+  pinMode(S1, INPUT);
+  pinMode(S2, INPUT);
+  pinMode(S3, INPUT);
+  pinMode(S4,INPUT);
+  pinMode(S5, INPUT);
+  pinMode(S6, INPUT);
+  /*pinMode(pinIngreso,INPUT);*/
+/*  pinMode(L1, INPUT);
+  pinMode(L2, INPUT);
+  pinMode(L3, INPUT);
+  pinMode(L4,INPUT);
+  pinMode(L5, INPUT);
+  pinMode(L6, INPUT);*/
+  
+}
+
+void loop() {
+
+
+/*int ingreso= digitalRead(pinIngreso);*/
+int ingreso =1;
+if(ingreso){
+  balancear();
+}
+delay(1000);
+/*ingreso=0;*/
+}
+
+
+void balancear(){
+int G1=(!digitalRead(S1))+(!digitalRead(S2));  /*guardo en las variables los estados de los estacionamientos*/
+int G2=(!digitalRead(S3))+(!digitalRead(S4));
+int G3=(!digitalRead(S5))+(!digitalRead(S6));
+Serial.println(G1);
+Serial.println(G2);
+Serial.println(G3);
+if((G1 < G2 && G1 < G3)||(G1==G2 && G1<G3)||(G1 == G3 && G1 < G2) ||(G1==G2&&G1==G3 )){
+  Serial.println("Entro a G1");
+  agregarG1();
+}
+else{
+  if((G2 < G1 && G2 < G3)||(G2 == G1 && G2 <G3)||(G2==G3 && G2 <G1)){
+    Serial.println("Entro a G2");
+    agregarG2();
+  }
+  else{
+    if((G3 < G1 && G3 < G2)||(G3 < G2 && G3< G1)){
+      Serial.println("Entro a G3");
+      agregarG3();
+    }
+  }
+}
+  
+}
+
+void agregarG1(){
+  if(!digitalRead(S1)){
+  /*digitalWrite(L2,1);*/
+  Serial.println("Lugar n2");
+}
+else{
+  /*digitalWrite(L1,1);*/
+  Serial.println("lugar n1");
+}
+}
+
+void agregarG2(){
+  if(!digitalRead(S3)){
+  /*digitalWrite(L4,1);*/
+  Serial.println("lugar n4");
+}
+else{
+  /*digitalWrite(L3,1);*/
+  Serial.println("lugar n3");
+}
+}
+
+void agregarG3(){
+  if(!digitalRead(S5)){
+  /*digitalWrite(L6,1);*/
+  Serial.println("lugar n6");
+}
+else{
+  /*digitalWrite(L5,1);*/
+  Serial.println("lugar n5");
+}
+}
+```
