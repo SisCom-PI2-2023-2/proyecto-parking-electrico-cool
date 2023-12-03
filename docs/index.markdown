@@ -16,6 +16,13 @@ layout: home
 
 Esta es la página principal. La pueden ajustar a su gusto usando [markdown](https://www.markdownguide.org/basic-syntax/)
 
+## Objetivo
+
+El objetivo principal de este proyecto es diseñar e implementar un innovador sistema de
+estacionamiento inteligente orientado a vehículos eléctricos, con el propósito de facilitar la
+adopción de la movilidad sostenible, mejorar la experiencia del usuario y contribuir a la
+reducción de la huella de carbono.
+
 ## Ejemplo
 
 Así se agrega una imagen. En general se guardan en la carpeta `assets`:
