@@ -54,6 +54,7 @@ permalink: /Equipo/
         </div>
     </div>
     <div>
+        <br>
         <p>El equipo anterior es el responsable por el contenido publicado en esta web e indicamos conocer y acordar las reglas de netiqueta</p>
     </div>
 </body>
