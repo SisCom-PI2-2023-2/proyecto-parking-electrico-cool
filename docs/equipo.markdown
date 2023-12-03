@@ -26,7 +26,7 @@ permalink: /Equipo/
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow */
     }
     .image-container img {
-        width: 150px; /* Adjust the width of each image */
+        width: 130px; /* Adjust the width of each image */
         height: 205px;
         margin-bottom: 20px; /* Add space between image and subtext */
     }
