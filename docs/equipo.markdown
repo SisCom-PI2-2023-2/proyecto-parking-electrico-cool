@@ -30,5 +30,8 @@ permalink: /equipo/
 </html>
 
 ## Información del equipo...
+![Yo](/assets/Yo.jpg)
+![squirtle](/assets/squirtle.png)
+![bulbasaur](/assets/bulbasaur.png)
 
 Pueden poner links y fotos!
