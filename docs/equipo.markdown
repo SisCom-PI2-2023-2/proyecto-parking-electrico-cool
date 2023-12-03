@@ -7,10 +7,8 @@ permalink: /equipo/
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipo</title>
-
-
-<style>
+    <title>Your Page</title>
+   <style>
     body {
         background-color: #e0f7fa; /* Light blue background color */
         margin: 0; /* Remove default body margin */
@@ -38,8 +36,8 @@ permalink: /equipo/
     }
 </style>
 </head>
-<body>
-    <div class="image-container">
+    <body>
+
         <div>
             <img src="assets/bulbasaur.png" alt="Image 1">
             <p class="subtext">Bruno de León - 220743</p>
@@ -52,9 +50,7 @@ permalink: /equipo/
             <img src="assets/squirtle.png" alt="Image 3">
             <p class="subtext">Pilar Martínez - 268474</p>
         </div>
-    </div>
-
-</body>
+    </body>
 </html>
 
 ## Información del equipo...
