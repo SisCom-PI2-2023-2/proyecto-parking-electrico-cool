@@ -44,7 +44,7 @@ permalink: /equipo/
             <p class="subtext">Bruno de León - 220743</p>
         </div>
         <div>
-            <img src="assets/mtstmichel.jpg" alt="Image 2">
+            <img src="assets/Yo.jpg" alt="Image 2">
             <p class="subtext">Christian Zorrón - 231768</p>
         </div>
         <div>
