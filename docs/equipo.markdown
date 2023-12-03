@@ -22,11 +22,11 @@ permalink: /Equipo/
         max-width: 800px; /* Adjust the width based on your design */
         margin: 0 auto; /* Center the container */
         padding: 20px; /* Add some padding to the container */
-        background-color: blue; /* Set a white background for the container */
+        background-color: indigo; /* Set a white background for the container */
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow */
     }
     .image-container img {
-        max-width: 30%; /* Adjust the width of each image */
+        width: 100px; /* Adjust the width of each image */
         height: 205px;
         margin-bottom: 20px; /* Add space between image and subtext */
     }
