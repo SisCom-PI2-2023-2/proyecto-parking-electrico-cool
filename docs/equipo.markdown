@@ -48,7 +48,7 @@ permalink: /Equipo/
             <p class="subtext">Ingeniería en Telecomunicaciones</p>
         </div>
         <div>
-            <img src="/proyecto-volt-park/assets/bulbasaur.png" alt="Image 3">
+            <img src="/proyecto-volt-park/assets/bruno.jpg" alt="Image 3">
             <p class="subtext">Bruno de León - 220743</p>
             <p class="subtext">Ingeniería en Electrónica</p>
         </div>
