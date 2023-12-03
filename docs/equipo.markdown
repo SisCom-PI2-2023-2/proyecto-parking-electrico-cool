@@ -9,7 +9,7 @@ permalink: /equipo/
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equipo</title>
 
-</head>
+
 <style>
     body {
         background-color: #e0f7fa; /* Light blue background color */
@@ -37,6 +37,7 @@ permalink: /equipo/
         text-align: center;
     }
 </style>
+</head>
 <body>
     <div class="image-container">
         <div>
