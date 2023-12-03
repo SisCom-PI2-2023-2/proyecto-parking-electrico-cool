@@ -3,7 +3,6 @@ layout: page
 title: Equipo
 permalink: /equipo/
 ---
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -34,15 +33,15 @@ permalink: /equipo/
     <div class="image-container">
         <div>
             <img src="assets/bulbasaur.jpg" alt="Image 1">
-            <p class="subtext">Subtext for Image 1</p>
+            <p class="subtext">Bruno de León - 220743-</p>
         </div>
         <div>
             <img src="/assets/Yo.jpg" alt="Image 2">
-            <p class="subtext">Subtext for Image 2</p>
+            <p class="subtext">Christian Zorrón - 231768</p>
         </div>
         <div>
             <img src="assets/squirtle.jpg" alt="Image 3">
-            <p class="subtext">Subtext for Image 3</p>
+            <p class="subtext">Pilar Martínez - 268474</p>
         </div>
     </div>
 
