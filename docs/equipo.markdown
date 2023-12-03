@@ -1,3 +1,10 @@
+---
+layout: page
+title: Equipo
+permalink: /Equipo/
+---
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
