@@ -40,7 +40,7 @@ permalink: /equipo/
             <p class="subtext">Christian Zorrón - 231768</p>
         </div>
         <div>
-            <img src="docs/assets/squirtle.jpg" alt="Image 3">
+            <img src="docs/assets/squirtle.png" alt="Image 3">
             <p class="subtext">Pilar Martínez - 268474</p>
         </div>
     </div>
