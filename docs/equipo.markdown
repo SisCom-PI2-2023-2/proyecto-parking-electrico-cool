@@ -32,16 +32,16 @@ permalink: /Equipo/
 <body>
     <div class="image-container">
         <div>
-            <img src="image1.jpg" alt="Image 1">
+            <img src="assets/Yo.jpg" alt="Image 1">
             <p class="subtext">Subtext for Image 1</p>
         </div>
         <div>
-            <img src="image2.jpg" alt="Image 2">
-            <p class="subtext">Subtext for Image 2</p>
+            <img src="assets/squirtle.png" alt="Image 2">
+            <p class="subtext">Pilar Martínez - 268474</p>
         </div>
         <div>
-            <img src="image3.jpg" alt="Image 3">
-            <p class="subtext">Subtext for Image 3</p>
+            <img src="assets/bulbasaur.png" alt="Image 3">
+            <p class="subtext">Bruno de León - 220743</p>
         </div>
     </div>
 </body>
