@@ -31,7 +31,7 @@ permalink: /Equipo/
         margin-bottom: 20px; 
     }
     .subtext {
-        text-align: center;
+        text-align: left;
     }
 </style>
 </head>
