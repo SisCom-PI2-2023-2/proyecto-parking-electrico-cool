@@ -38,15 +38,15 @@ permalink: /Equipo/
 <body>
     <div class="image-container">
         <div>
-            <img src="docs/assets/Yo.jpg" alt="Image 1">
+            <img src="/proyecto-volt-park/assets/Yo.jpg" alt="Image 1">
             <p class="subtext">Christian Zorrón - 2317681</p>
         </div>
         <div>
-            <img src="assets/squirtle.png" alt="Image 2">
+            <img src="/proyecto-volt-park/assets/squirtle.png" alt="Image 2">
             <p class="subtext">Pilar Martínez - 268474</p>
         </div>
         <div>
-            <img src="assets/bulbasaur.png" alt="Image 3">
+            <img src="/proyecto-volt-park/assets/bulbasaur.png" alt="Image 3">
             <p class="subtext">Bruno de León - 220743</p>
         </div>
     </div>
