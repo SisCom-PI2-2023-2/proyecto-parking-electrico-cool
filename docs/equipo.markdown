@@ -55,9 +55,3 @@ permalink: /Equipo/
     </div>
 </body>
 </html>
-
-
-## Información del equipo...
-
-
-Pueden poner links y fotos!
