@@ -29,18 +29,18 @@ permalink: /equipo/
     </style>
 </head>
 <body>
-
+    style="background-color: #add8e6; color: black;">
     <div class="image-container">
         <div>
-            <img src="assets/bulbasaur.jpg" alt="Image 1">
+            <img src="docs/assets/bulbasaur.png" alt="Image 1">
             <p class="subtext">Bruno de León - 220743-</p>
         </div>
         <div>
-            <img src="/assets/Yo.jpg" alt="Image 2">
+            <img src="docs/assets/Yo.jpg" alt="Image 2">
             <p class="subtext">Christian Zorrón - 231768</p>
         </div>
         <div>
-            <img src="assets/squirtle.jpg" alt="Image 3">
+            <img src="docs/assets/squirtle.jpg" alt="Image 3">
             <p class="subtext">Pilar Martínez - 268474</p>
         </div>
     </div>
