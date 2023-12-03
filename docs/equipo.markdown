@@ -33,7 +33,7 @@ permalink: /equipo/
     <div class="image-container">
         <div>
             <img src="docs/assets/bulbasaur.png" alt="Image 1">
-            <p class="subtext">Bruno de León - 220743-</p>
+            <p class="subtext">Bruno de León - 220743</p>
         </div>
         <div>
             <img src="docs/assets/Yo.jpg" alt="Image 2">
