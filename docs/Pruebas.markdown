@@ -11,7 +11,8 @@ permalink: /Pruebas/
 <body style="background-color: #add8e6; color: black;">
 </body>
 </html>
-## Balanceo de carga:
+
+## Balanceo de carga
 1. Se prueba una versión sencilla del código, sin leds ni sensores. La prueba consta en ingresar valores entre 0 y 2 que indiquen la cantidad de lugares ocupados en cada grupo de lugares de estacionamiento. El algoritmo debe identificar cual de los 3 grupos es el menor e informarlo.
 
 2. Se prueba el algoritmo de balanceo utilizando una porción reducida de sensores de proximidad. Esta prueba es similar a la anterior, solo que no se ingresan los números manualmente, sino que se obtienen valores reales obtenidos de los sensores, posterior a su calibración.  
