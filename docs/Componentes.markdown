@@ -20,6 +20,7 @@ La lógica de los distintos elementos se controla con una placa ESP8266 y dos pl
 El costo de la ESP8266 fue de UYU 400, el de la ESP32 de 38 pines de UYU 897 y por último, el de la ESP32 con cámara de UYU 1025. 
 
 Sus especificaciones se pueden encontrar en los siguientes enlaces:
+
 <a href="https://www.electronica.com.uy/robotica/modulos-comunicacion/m%C3%B3dulo-nodemcu-v3-esp8266-wifi-detalle.html">ESP866</a>
 
 <a href="https://www.electronica.com.uy/robotica/modulos-comunicacion/m%C3%B3dulo-esp32-wifi-bluetooth-7684-detalle.html">ESP32 38 pines</a>
