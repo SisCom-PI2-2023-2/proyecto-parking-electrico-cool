@@ -27,6 +27,9 @@ El lector de tarjetas permite recopilar la información de las tarjetas utilizad
 El array obtenido obtiene la información que luego se envía al servidor de Thingsboard para ser contrastada con los datos preguardados como los usuarios con sus respectivas identificaciones y lugares ocupados totales, los cuales son la suma de los lugares ocupados detectados por los sensores y los lugares previamente reservados por la aplicación. 
 En caso en que la información recopilada indique que el ingreso es permitido, la placa recibirá esa información desde el servidor y abrirá la barrera, dando lugar al balanceo de carga posterior por parte de otra placa. 
 
+## Prototipo de Control de Usuarios
+Esta sección del trabajo se refiere a la lógica necesaria para manejar las reservas previas vía web, y permitir la entrada al parking en caso de que no haya espacio. Este prototipo ocurre en Thingsboard, donde utilizamos dos cadenas de reglas, la primera que anota en una lista de reserva en caso de que no lo haya hecho previamente, y la segunda, que cuando se pide la entrada de un auto, se pregunta si reservo a la lista mencionada antes y se actúa conforme a la respuesta.
+Esta lógica es el cerebro del proyecto, sin esta parte, hay secciones de los otros prototipos que no funcionarían, como se menciono en los otros prototipos.
 
 
 
