@@ -39,7 +39,11 @@ permalink: /Pruebas/
 2. Se prueba la elevación de la barrera ante un input, en este caso una señal proveniente del reconocimiento de una tarjeta con el RfId.
 3. Se implementa la elevación condicional de la barrera, esta se abre al encontrar coincidencia entre la Id de entrada y una previamente guardada en la placa.
 
-   
-   
+## Manejo de usuarios
+1.	Primera etapa, cada usuario es un Asset, que tiene como atributos los datos necesarios de identificación e información vital.
+2.	Segunda etapa, todos los usuarios pasan a ser parte de un Asset, esto soluciona el problema de la utilización del bloque de enriquecimiento de la cadena de reglas, se sabe de dónde se saca la información independiente del usuario
+3.	Tercera etapa, los usuarios pasan a ser clientes, esto soluciona poder sobrescribir los valores de atributos de cada usuario desde la cadena de reglas.
+4.	Cuarta etapa, los usuarios bajan de nivel, y se convierten finalmente en usuarios, generando la identificación de cada usuario previamente desde el ingreso de Thingsboard. Esta etapa no viene sin sus perjuicios, como volver al problema de sobrescribir los datos de los atributos, pero es vital que cada usuario tenga su propio Dashboard, además de verificación de usuario al entrar.
+
 
 
