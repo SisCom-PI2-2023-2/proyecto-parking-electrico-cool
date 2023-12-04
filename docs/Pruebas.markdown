@@ -45,5 +45,9 @@ permalink: /Pruebas/
 3.	Tercera etapa, los usuarios pasan a ser clientes, esto soluciona poder sobrescribir los valores de atributos de cada usuario desde la cadena de reglas.
 4.	Cuarta etapa, los usuarios bajan de nivel, y se convierten finalmente en usuarios, generando la identificación de cada usuario previamente desde el ingreso de Thingsboard. Esta etapa no viene sin sus perjuicios, como volver al problema de sobrescribir los datos de los atributos, pero es vital que cada usuario tenga su propio Dashboard, además de verificación de usuario al entrar.
 
+## Pruebas RPC
+1.	Se manda y se recibe exitosamente una telemetría de datos aleatorios desde el microcontrolador a la nube.
+2.	En base a un botón RPC de la nube, se logra mover un servomotor conectado al microcontrolador.
+3.	Finalmente se logra mover el microcontrolador gracias a una cadena de reglas en Thingsboard.
 
 
