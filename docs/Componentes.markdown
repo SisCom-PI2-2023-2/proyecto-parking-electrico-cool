@@ -13,7 +13,7 @@ permalink: /Componentes/
 </body>
 </html>
 
-##Microcontroladores
+## Microcontroladores
 
 La lógica de los distintos elementos se controla con una placa ESP8266 y dos placas ESP32 (una de 38 pines y otra con módulo de cámara). La opción con cámara se eligió teniendo en consideración que se espera poder desarrollar una solución que lea la matrícula de los autos a la entrada o salida del estacionamiento para su identificación. La ESP32 de 38 pines fue utilizada para el prototipo que incluye a los sensores de proximidad que detectan la presencia o ausencia de autos, los leds de cada espacio de estacionamiento y la lógica de balanceo de carga. La ESP866 se utilizó para la entrada al estacionamiento, esto incluye el primer lector RFID y servomotor para barrera así como el display 7segmentos que muestra la cantidad de lugares disponibles en el estacionamiento. Por último, la ESP32 con módulo de cámara se está utilizando al momento para el lector RFID de la salida y el segundo servomotor para barrera.
 
