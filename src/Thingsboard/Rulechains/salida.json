@@ -1,0 +1,483 @@
+{
+  "ruleChain": {
+    "additionalInfo": {
+      "description": ""
+    },
+    "name": "sALIDA",
+    "type": "CORE",
+    "firstRuleNodeId": null,
+    "root": false,
+    "debugMode": false,
+    "configuration": null,
+    "externalId": null
+  },
+  "metadata": {
+    "firstNodeIndex": 0,
+    "nodes": [
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 303,
+          "layoutY": 154
+        },
+        "type": "org.thingsboard.rule.engine.filter.TbCheckMessageNode",
+        "name": "tarjeta",
+        "debugMode": true,
+        "singletonMode": false,
+        "configurationVersion": 0,
+        "configuration": {
+          "messageNames": [
+            "Puerta"
+          ],
+          "metadataNames": [],
+          "checkAllKeys": true
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 582,
+          "layoutY": 152
+        },
+        "type": "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode",
+        "name": "Origen",
+        "debugMode": true,
+        "singletonMode": false,
+        "configurationVersion": 0,
+        "configuration": {
+          "originatorSource": "ENTITY",
+          "entityType": "ASSET",
+          "entityNamePattern": "Parking",
+          "relationsQuery": {
+            "direction": "FROM",
+            "maxLevel": 1,
+            "filters": [
+              {
+                "relationType": "Contains",
+                "entityTypes": []
+              }
+            ],
+            "fetchLastLevelOnly": false
+          }
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 930,
+          "layoutY": 155
+        },
+        "type": "org.thingsboard.rule.engine.metadata.TbGetAttributesNode",
+        "name": "Info",
+        "debugMode": true,
+        "singletonMode": false,
+        "configurationVersion": 1,
+        "configuration": {
+          "tellFailureIfAbsent": true,
+          "fetchTo": "DATA",
+          "clientAttributeNames": [],
+          "sharedAttributeNames": [],
+          "serverAttributeNames": [
+            "Lista Ip Persona",
+            "Lista_Pago"
+          ],
+          "latestTsKeyNames": [],
+          "getLatestValueWithTs": false
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 1245,
+          "layoutY": 158
+        },
+        "type": "org.thingsboard.rule.engine.transform.TbTransformMsgNode",
+        "name": "aaaaaaaa",
+        "debugMode": true,
+        "singletonMode": false,
+        "configurationVersion": 0,
+        "configuration": {
+          "scriptLang": "JS",
+          "jsScript": "var obj = msg.Puerta;\nvar ListaPaIp=msg[\"ss_Lista Ip Persona\"];\nvar Listabooked=msg[\"ss_Lista_Pago\"];\nvar autos = msg[\"ss_Cantidad Autos Disponibles Total\"];\nvar aux=\"\";\nvar existe = false;\nvar pago=false;\n\nfor (var key in ListaPaIp) {\n    if(key==obj){\n        aux=ListaPaIp[key];\n        existe = true;    \n    }\n}\n\nif(existe){\n    for (var i =0; i<Listabooked.length ; i++){\n        if(Listabooked[i].user_id==aux){\n            pago=true;\n        }\n    }\n}\n    \nvar resp={\"userId\":aux,\"Pago\":pago};\n\n\nreturn {msg: resp, metadata: metadata, msgType: msgType};",
+          "tbelScript": "return {msg: msg, metadata: metadata, msgType: msgType};"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 1592,
+          "layoutY": 158
+        },
+        "type": "org.thingsboard.rule.engine.metadata.TbGetAttributesNode",
+        "name": "Cant_Autos",
+        "debugMode": true,
+        "singletonMode": false,
+        "configurationVersion": 1,
+        "configuration": {
+          "tellFailureIfAbsent": true,
+          "fetchTo": "DATA",
+          "clientAttributeNames": [],
+          "sharedAttributeNames": [],
+          "serverAttributeNames": [
+            "Cantidad Autos Disponibles Total"
+          ],
+          "latestTsKeyNames": [],
+          "getLatestValueWithTs": false
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 701,
+          "layoutY": 334
+        },
+        "type": "org.thingsboard.rule.engine.filter.TbJsFilterNode",
+        "name": "Dejar entrar",
+        "debugMode": true,
+        "singletonMode": false,
+        "configurationVersion": 0,
+        "configuration": {
+          "scriptLang": "JS",
+          "jsScript": "var cantAutos=msg[\"ss_Cantidad Autos Disponibles Total\"];\nvar pago=msg[\"Pago\"];\nif(pago){\nreturn true;}\n        return false;\n\n",
+          "tbelScript": "return msg.temperature > 20;"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 1620,
+          "layoutY": 415
+        },
+        "type": "org.thingsboard.rule.engine.rpc.TbSendRPCRequestNode",
+        "name": "Rpc autos",
+        "debugMode": true,
+        "singletonMode": false,
+        "configurationVersion": 0,
+        "configuration": {
+          "timeoutInSeconds": 60
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 1063,
+          "layoutY": 418
+        },
+        "type": "org.thingsboard.rule.engine.transform.TbTransformMsgNode",
+        "name": "aaaaaaaa",
+        "debugMode": true,
+        "singletonMode": false,
+        "configurationVersion": 0,
+        "configuration": {
+          "scriptLang": "JS",
+          "jsScript": "\nvar msg={\n  \"method\": \"dejarSalir\",\n  \"params\": {\n  }\n}\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+          "tbelScript": "return {msg: msg, metadata: metadata, msgType: msgType};"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 1345,
+          "layoutY": 417
+        },
+        "type": "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode",
+        "name": "A Salida",
+        "debugMode": true,
+        "singletonMode": false,
+        "configurationVersion": 0,
+        "configuration": {
+          "originatorSource": "ENTITY",
+          "entityType": "DEVICE",
+          "entityNamePattern": "Salida",
+          "relationsQuery": {
+            "direction": "FROM",
+            "maxLevel": 1,
+            "filters": [
+              {
+                "relationType": "Contains",
+                "entityTypes": []
+              }
+            ],
+            "fetchLastLevelOnly": false
+          }
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 1068,
+          "layoutY": 511
+        },
+        "type": "org.thingsboard.rule.engine.transform.TbTransformMsgNode",
+        "name": "subir cantidad",
+        "debugMode": true,
+        "singletonMode": false,
+        "configurationVersion": 0,
+        "configuration": {
+          "scriptLang": "JS",
+          "jsScript": "var cantidad=msg[\"ss_Cantidad Autos Disponibles Total\"];\nvar reservo= msg.reservo;\n\n    cantidad=cantidad+1;\n\nvar aux={\"Cantidad Autos Disponibles Total\":cantidad};\nreturn {msg: aux, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\"};",
+          "tbelScript": "return {msg: msg, metadata: metadata, msgType: msgType};"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 1375,
+          "layoutY": 515
+        },
+        "type": "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode",
+        "name": "l",
+        "debugMode": true,
+        "singletonMode": false,
+        "configurationVersion": 2,
+        "configuration": {
+          "scope": "SERVER_SCOPE",
+          "notifyDevice": false,
+          "sendAttributesUpdatedNotification": false,
+          "updateAttributesOnlyOnValueChange": true
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 741,
+          "layoutY": 732
+        },
+        "type": "org.thingsboard.rule.engine.filter.TbJsFilterNode",
+        "name": "reservar",
+        "debugMode": true,
+        "singletonMode": false,
+        "configurationVersion": 0,
+        "configuration": {
+          "scriptLang": "TBEL",
+          "jsScript": "return msg.temperature > 20;",
+          "tbelScript": "return msg.Pago"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 1085,
+          "layoutY": 745
+        },
+        "type": "org.thingsboard.rule.engine.metadata.TbGetAttributesNode",
+        "name": "dar lista",
+        "debugMode": true,
+        "singletonMode": false,
+        "configurationVersion": 1,
+        "configuration": {
+          "tellFailureIfAbsent": true,
+          "fetchTo": "DATA",
+          "clientAttributeNames": [],
+          "sharedAttributeNames": [],
+          "serverAttributeNames": [
+            "Lista_Pago"
+          ],
+          "latestTsKeyNames": [],
+          "getLatestValueWithTs": false
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 1348,
+          "layoutY": 739
+        },
+        "type": "org.thingsboard.rule.engine.transform.TbTransformMsgNode",
+        "name": "sacar reserva",
+        "debugMode": true,
+        "singletonMode": false,
+        "configurationVersion": 0,
+        "configuration": {
+          "scriptLang": "JS",
+          "jsScript": "var quien = msg.userId;\nvar lista = msg.ss_Lista_Pago;\n\nfor (var i = 0 ; i<lista.length; i++) {\n    if(lista[i].user_id==quien){\n        lista.splice(i, 1);\n    }\n}\n\nvar aux = {\"Lista_Pago\":lista};\n\nreturn {msg: aux, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\"};",
+          "tbelScript": "var quien = msg.userId;\nvar lista = msg.ss_Lista;"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 1599,
+          "layoutY": 735
+        },
+        "type": "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode",
+        "name": "l",
+        "debugMode": true,
+        "singletonMode": false,
+        "configurationVersion": 2,
+        "configuration": {
+          "scope": "SERVER_SCOPE",
+          "notifyDevice": false,
+          "sendAttributesUpdatedNotification": false,
+          "updateAttributesOnlyOnValueChange": true
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 1062,
+          "layoutY": 597
+        },
+        "type": "org.thingsboard.rule.engine.transform.TbTransformMsgNode",
+        "name": "aaaaaaaa",
+        "debugMode": true,
+        "singletonMode": false,
+        "configurationVersion": 0,
+        "configuration": {
+          "scriptLang": "JS",
+          "jsScript": "var cantidad=msg[\"ss_Cantidad Autos Disponibles Total\"];\n\n    cantidad=cantidad+1;\n\nvar msg={\n  \"method\": \"actualizar7Seg\",\n  \"params\":cantidad\n}\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+          "tbelScript": "return {msg: msg, metadata: metadata, msgType: msgType};"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 1336,
+          "layoutY": 595
+        },
+        "type": "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode",
+        "name": "A puerta",
+        "debugMode": true,
+        "singletonMode": false,
+        "configurationVersion": 0,
+        "configuration": {
+          "originatorSource": "ENTITY",
+          "entityType": "DEVICE",
+          "entityNamePattern": "Puerta",
+          "relationsQuery": {
+            "direction": "FROM",
+            "maxLevel": 1,
+            "filters": [
+              {
+                "relationType": "Contains",
+                "entityTypes": []
+              }
+            ],
+            "fetchLastLevelOnly": false
+          }
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 1618,
+          "layoutY": 599
+        },
+        "type": "org.thingsboard.rule.engine.rpc.TbSendRPCRequestNode",
+        "name": "Rpc autos",
+        "debugMode": true,
+        "singletonMode": false,
+        "configurationVersion": 0,
+        "configuration": {
+          "timeoutInSeconds": 60
+        },
+        "externalId": null
+      }
+    ],
+    "connections": [
+      {
+        "fromIndex": 0,
+        "toIndex": 1,
+        "type": "True"
+      },
+      {
+        "fromIndex": 1,
+        "toIndex": 2,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 2,
+        "toIndex": 3,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 3,
+        "toIndex": 4,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 4,
+        "toIndex": 5,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 5,
+        "toIndex": 7,
+        "type": "True"
+      },
+      {
+        "fromIndex": 5,
+        "toIndex": 9,
+        "type": "True"
+      },
+      {
+        "fromIndex": 5,
+        "toIndex": 11,
+        "type": "True"
+      },
+      {
+        "fromIndex": 5,
+        "toIndex": 15,
+        "type": "True"
+      },
+      {
+        "fromIndex": 7,
+        "toIndex": 8,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 8,
+        "toIndex": 6,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 9,
+        "toIndex": 10,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 11,
+        "toIndex": 12,
+        "type": "True"
+      },
+      {
+        "fromIndex": 12,
+        "toIndex": 13,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 13,
+        "toIndex": 14,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 15,
+        "toIndex": 16,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 16,
+        "toIndex": 17,
+        "type": "Success"
+      }
+    ],
+    "ruleChainConnections": null
+  }
+}
