@@ -62,15 +62,13 @@ Toda la información del sistema está centralizada en la nube (utilizando la pl
         <div>
             <img src="assets/Cargadores.jpeg" alt="Image 1">
             <p class="subtext">Cargadores</p>
-        <div>
+          
             <img src="assets/Camion_cargando.jpeg" alt="Image 2">
             <p class="subtext">Camión cargando</p>
-        <div>
+
             <img src="assets/Display_7_seg.jpeg" alt="Image 3">
             <p class="subtext">Display 7 segmentos con cantidad de autos disponibles</p>
-    </div>
-</body>
-</html>
+      </div>
 
 ## Poster del Proyecto
 
