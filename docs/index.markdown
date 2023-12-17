@@ -43,7 +43,10 @@ En cuanto el usuario decida retirarse del estacionamiento la valla de salida se 
 Toda la información del sistema está centralizada en la nube (utilizando la plataforma Thingsboard) de forma de mantener los distintos dispositivos conectados y actualizados.
 
 ## Los resultados
+<html lang="en">
+<head>
 
+<style>
     .image-container img {
         width: 200px; 
         height: 300px;
