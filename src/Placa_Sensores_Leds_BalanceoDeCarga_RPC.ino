@@ -224,6 +224,7 @@ void loop() {
   client.loop();
 
   /*int ingreso= digitalRead(pinIngreso);*/
+  // prendo los leds segun el status de cada sensor
   if (!digitalRead(S1)) {
     O1 = false;
     digitalWrite(L11, 1);
