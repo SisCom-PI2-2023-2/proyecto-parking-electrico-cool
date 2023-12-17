@@ -57,8 +57,8 @@ Toda la información del sistema está centralizada en la nube (utilizando la pl
         }
 
         .image-container img {
-            width: 320px; /* Ajusta el tamaño deseado */
-            height: 400px;
+            width: 340px; /* Ajusta el tamaño deseado */
+            height: 430px;
             margin-right: 10px; /* Espacio entre las imágenes */
             margin-bottom: 10px; /* Espacio entre las filas */
         }
