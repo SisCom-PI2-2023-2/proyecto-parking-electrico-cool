@@ -43,7 +43,7 @@ En cuanto el usuario decida retirarse del estacionamiento la valla de salida se 
 Toda la información del sistema está centralizada en la nube (utilizando la plataforma Thingsboard) de forma de mantener los distintos dispositivos conectados y actualizados.
 
 ## Los resultados
-<!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -53,12 +53,14 @@ Toda la información del sistema está centralizada en la nube (utilizando la pl
     <style>
         .image-container {
             display: flex;
+            flex-wrap: wrap;
         }
 
         .image-container img {
-            width: 200px; /* Ajusta el tamaño deseado */
-            height: 300px;
+            width: 320px; /* Ajusta el tamaño deseado */
+            height: 400px;
             margin-right: 10px; /* Espacio entre las imágenes */
+            margin-bottom: 10px; /* Espacio entre las filas */
         }
     </style>
 </head>
@@ -68,6 +70,10 @@ Toda la información del sistema está centralizada en la nube (utilizando la pl
         <img src="assets/Cargadores.jpeg" alt="Imagen 1">
         <img src="assets/Camion_cargando.jpeg" alt="Imagen 2">
         <img src="assets/Display_7_seg.jpeg" alt="Imagen 3">
+
+        <img src="assets/Maqueta_1.jpeg" alt="Imagen 4">
+        <img src="assets/Maqueta_2.jpeg" alt="Imagen 5">
+        <img src="assets/Maqueta_3.jpeg" alt="Imagen 6">
 
     </div>
 
