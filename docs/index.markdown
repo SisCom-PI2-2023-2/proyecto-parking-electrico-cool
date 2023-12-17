@@ -59,7 +59,7 @@ Toda la información del sistema está centralizada en la nube (utilizando la pl
 <body>
 
     <video width="740" height="400" controls>
-        <source src="/assets/Video_Publicitario.mp4" type="video/mp4">
+        <source src="assets/Video_Publicitario.mp4" type="video/mp4">
         Tu navegador no soporta el elemento de video.
     </video>
 
