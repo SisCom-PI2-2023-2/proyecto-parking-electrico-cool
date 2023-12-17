@@ -62,8 +62,8 @@ El diseño 3D utilizado para la maqueta es el que se muestra en la siguiente ima
 </head>
 <body>
 
-    <video width="640" height="360" controls>
-        <source src="/proyecto-volt-park/docs/assets/Video_Publicitario.mp4" type="video/mp4">
+    <video width="700" height="360" controls>
+        <source src="/proyecto-volt-park/assets/Video_Publicitario.mp4" type="video/mp4">
         Tu navegador no soporta el elemento de video.
     </video>
 
