@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Día 29"
+date:   2023-12-10 19:30:00 -0300
+categories: posts
+---
+
+Se conectan sensores y leds en la maqueta, esto causó varios problemas debido a la sensibilidad de los sensores así como la dificultad de conectar los leds correctamente fuera del protoboard. 
+Queda todo funcionando ok.
+
+Se muestra a continuación un video de lo anterior:
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página con Video</title>
+</head>
+<body>
+
+    <video width="640" height="360" controls>
+        <source src="/proyecto-volt-park/assets/Leds y sensores.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+
+</body>
+</html>
