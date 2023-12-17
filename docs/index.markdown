@@ -104,4 +104,14 @@ Toda la información del sistema está centralizada en la nube (utilizando la pl
 </body>
 </html>
 
+## Conclusiones
+
+El desarrollo del proyecto Volt Park ha sido una experiencia valiosa que nos ha proporcionado insights significativos en la implementación de un sistema de estacionamiento inteligente para vehículos eléctricos. A lo largo de esta iniciativa, se han identificado y abordado desafíos técnicos, se ha explorado la integración de diversas tecnologías y se ha logrado una comprensión más profunda de la movilidad sostenible y la gestión eficiente de infraestructuras de carga.
+
+Durante el proceso, hemos consolidado nuestros conocimientos en el manejo de hardware específico, como microcontroladores ESP8266 y ESP32, lectores de RFID y servomotores. La configuración de la plataforma Thingsboard para centralizar la lógica IoT ha sido esencial, permitiendo la supervisión remota y la toma de decisiones informadas.
+
+Sin embargo, reconocemos que, debido a restricciones temporales y obstáculos encontrados en el camino, algunas funcionalidades planeadas para la mejora de la solución inicial no pudieron implementarse completamente. Estas limitaciones han generado valiosas lecciones sobre la importancia de la planificación y la adaptabilidad en proyectos de esta naturaleza. Mirando hacia el futuro, identificamos áreas de mejora que podrían elevar aún más la eficacia y la experiencia del usuario en Volt Park y se encuentran detalladas en la pestaña "Oportunidades de mejora". 
+
+En resumen, Volt Park representa un hito importante en nuestro viaje hacia soluciones de movilidad sostenible, y las lecciones aprendidas y las perspectivas futuras servirán como cimientos sólidos para proyectos posteriores y la evolución continua de este sistema de estacionamiento inteligente.
+
 ## Bitácora
