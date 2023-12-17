@@ -8,8 +8,8 @@
 //
 
 
-Servo myservo;
-int angle = 0;
+Servo myservo; // Inicializar objeto Servo para controlar el servomotor
+int angle = 0; // Variable para almacenar el ángulo del servomotor
 
 // Credenciales de la red WiFi
 const char* ssid = "HUAWEI-IoT";
