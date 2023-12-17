@@ -58,8 +58,8 @@ Toda la información del sistema está centralizada en la nube (utilizando la pl
 </head>
 <body>
 
-    <video width="720" height="400" controls>
-        <source src="Video_Publicitario.mp4" type="video/mp4">
+    <video width="750" height="400" controls>
+        <source src="/proyecto-volt-park/assets/Video_Publicitario.mp4" type="video/mp4">
         Tu navegador no soporta el elemento de video.
     </video>
 
