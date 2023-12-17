@@ -80,11 +80,13 @@ Toda la información del sistema está centralizada en la nube (utilizando la pl
 </body>
 </html>
 
-## Poster del Proyecto
+## Video explicativo
+
+## Poster del proyecto
 
 ![poster](/assets/poster_proyecto.jpg)
 
-## Video Publicitario
+## Video publicitario
 
 <html lang="es">
 <head>
