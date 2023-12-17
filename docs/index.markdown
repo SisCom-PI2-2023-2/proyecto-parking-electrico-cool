@@ -44,6 +44,34 @@ Toda la información del sistema está centralizada en la nube (utilizando la pl
 
 ## Los resultados
 
+    .image-container img {
+        width: 200px; 
+        height: 300px;
+        margin-bottom: 20px; 
+    }
+    .subtext {
+        text-align: left;
+    }
+</style>
+</head>
+<body>
+    <div class="image-container">
+        <div>
+            <img src="assets/Cargadores.jpeg" alt="Image 1">
+            <p class="subtext">Cargadores</p>
+        </div>
+        <div>
+            <img src="assets/Camion_cargando.jpeg" alt="Image 2">
+            <p class="subtext">Camión cargando</p>
+        </div>
+        <div>
+            <img src="assets/Display_7_seg.jpeg" alt="Image 3">
+            <p class="subtext">Display 7 segmentos con cantidad de autos disponibles</p>
+        </div>
+    </div>
+</body>
+</html>
+
 ## Poster del Proyecto
 
 ![poster](/assets/poster_proyecto.jpg)
