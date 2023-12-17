@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Día 30"
+date:   2023-12-11 19:30:00 -0300
+categories: posts
+---
+
+Se pasan conexiones para la entrada al parking (RFID y 7 segmentos) a la maqueta, se tuvo algunas dificultades con el display 7 segmentos que se pudieron solucionar. 
+Se termina la maqueta. Se graban videos mostrando las principales funcionalidades. Se programan placas con códigos finales (con wifi de ORT).
+
+Los códigos finales se encuentran en la carpeta "src" del repositorio, las imágenes finales de la maqueta están en la página principal de nuestra GitHub Page.
