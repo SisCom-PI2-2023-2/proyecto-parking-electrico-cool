@@ -55,7 +55,7 @@ permalink: /Equipo/
     </div>
     <div>
         <br>
-        <p>El equipo anterior es el responsable por el contenido publicado en esta web e indicamos conocer y acordar las reglas de netiqueta</p>
+        <p>El equipo anterior realizó este proyecto en el marco de la materia Proyecto Integrador 2 de tercer año de la Universidad ORT siendo responsable por el contenido publicado en esta web e indicando conocer y acordar las reglas de netiqueta</p>
     </div>
 </body>
 </html>
