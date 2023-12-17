@@ -42,10 +42,6 @@ En cuanto el usuario decida retirarse del estacionamiento la valla de salida se 
 
 Toda la información del sistema está centralizada en la nube (utilizando la plataforma Thingsboard) de forma de mantener los distintos dispositivos conectados y actualizados.
 
-El diseño 3D utilizado para la maqueta es el que se muestra en la siguiente imagen:
-
-![diseno3D](/assets/Diseño_3D.JPG)
-
 ## Los resultados
 
 ## Poster del Proyecto
@@ -62,8 +58,8 @@ El diseño 3D utilizado para la maqueta es el que se muestra en la siguiente ima
 </head>
 <body>
 
-    <video width="700" height="360" controls>
-        <source src="/proyecto-volt-park/assets/Video_Publicitario.mp4" type="video/mp4">
+    <video width="720" height="400" controls>
+        <source src="Video_Publicitario.mp4" type="video/mp4">
         Tu navegador no soporta el elemento de video.
     </video>
 
