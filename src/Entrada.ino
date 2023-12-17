@@ -8,8 +8,8 @@
 //
 
 
-Servo myservo;
-int angle = 0;
+Servo myservo; // Inicializar objeto Servo para controlar el servomotor
+int angle = 0; // Variable para almacenar el ángulo del servomotor
 
 // Credenciales de la red WiFi
 const char* ssid = "HUAWEI-IoT";
@@ -47,7 +47,7 @@ char msg2[MSG_BUFFER_SIZE];
 
 int servo_pin = D4;  // for ESP8266 microcontroller
 
-int L0 = 5;
+int L0 = 5; // pines de la ESP8266 para salida de cantidad de autos disponibles en BCD
 int L1 = 4;
 int L2 = 0;
 int L3 = 10;
