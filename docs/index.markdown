@@ -82,6 +82,22 @@ Toda la información del sistema está centralizada en la nube (utilizando la pl
 
 ## Video explicativo
 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página con Video</title>
+</head>
+<body>
+
+    <video width="740" height="400" controls>
+        <source src="assets/Video_Descriptivo.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+
+</body>
+</html>
+
 ## Poster del proyecto
 
 ![poster](/assets/poster_proyecto.jpg)
